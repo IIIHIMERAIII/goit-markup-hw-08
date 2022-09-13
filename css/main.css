@@ -1079,6 +1079,7 @@ ul {
 
 .backdrop {
   position: fixed;
+  z-index: 4;
   top: 0;
   right: 0;
   height: 100%;
@@ -1094,7 +1095,7 @@ ul {
 
 .modal {
   position: absolute;
-  top: 41%;
+  top: 50%;
   left: 50%;
   width: 95.1%;
   max-width: 450px;
