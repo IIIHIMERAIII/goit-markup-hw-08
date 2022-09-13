@@ -934,6 +934,11 @@ ul {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
+@media screen and (min-width: 1199.98px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
 
 .footer__inner {
   text-align: center;
