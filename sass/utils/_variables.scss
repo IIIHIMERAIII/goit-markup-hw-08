@@ -1,0 +1,39 @@
+$primary-text-color: #757575;
+$title-color: #212121;
+$accent-color: #2196F3;
+$background-second-color: #2F303A;
+$button-bg: #2196F3;
+$primary-white-color: #FFFFFF;
+$primary-black-color: #000000;
+$contact-link-footer: rgba(255, 255, 255, 0.6);
+$hero-btn-active: #188CE8;
+$header-line-color: #ECECEC;
+$filter-btn-color: #F5F4FA;
+$svg-bg: #F5F4FA;
+$svg-color: #AFB1B8;
+$footer-button-bg: rgba(255, 255, 255, 0.1);
+$animation-duration: 250ms;
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$bg-animated-txt: rgba(33, 150, 243, 0.9);
+$backdrop-overlay: rgba(0, 0, 0, 0.2);
+
+$team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.20);
+$moadal-shadow:0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+$filter-shadow:0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+$category-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+
+// breakpoints
+$mobile: 479.98px;
+$tablet: 767.98px;
+$desktop: 1199.98px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');

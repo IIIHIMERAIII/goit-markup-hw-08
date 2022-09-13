@@ -1,0 +1,30 @@
+.main {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @media screen and (min-width:$desktop){
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.filter__list {
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    @media screen and (min-width:340px){
+    & li:nth-child(3n){
+    break-after: always;
+}}
+    @media screen and (min-width:$tablet){
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    }
+    @media screen and (min-width:$desktop) {
+    margin-bottom: 50px;
+    }
+}
+
+
+@import "./elements/filter-button"

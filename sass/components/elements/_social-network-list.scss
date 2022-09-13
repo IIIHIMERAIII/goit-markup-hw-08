@@ -1,0 +1,31 @@
+.social__list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__link {
+    width: 44px;
+    height: 44px;
+    background-color: $primary-white-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+    &:hover, &:focus{
+    background-color: $accent-color;
+    cursor: pointer;
+    }
+    &:hover .social__logo, &:focus .social__logo {
+    fill: $primary-white-color;
+    }
+}
+
+.social__logo {
+    fill: $svg-color;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+}

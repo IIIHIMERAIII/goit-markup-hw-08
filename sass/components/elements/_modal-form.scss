@@ -1,0 +1,53 @@
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.modal__form-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__form-item {
+    &:not(:first-child){
+    margin-top: 10px;}
+}
+
+.modal__title {
+    margin-bottom: 2px;
+    margin-top: 0;
+    width: 370px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $title-color;
+    @media screen and (min-width:$desktop) {
+    width: auto;
+    }
+}
+
+
+.modal__form-title {
+    margin-bottom: 4px;
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.modal__form-subtitle {
+    padding-bottom: 4px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}

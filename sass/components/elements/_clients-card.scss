@@ -1,0 +1,24 @@
+.clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus {
+    border: 1px solid $accent-color;
+    cursor: pointer;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+    }
+    &:hover .clients__icon, &:focus .clients__icon {
+    fill: $accent-color;
+    }
+}
+
+.clients__icon {
+    fill: $svg-color;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+}

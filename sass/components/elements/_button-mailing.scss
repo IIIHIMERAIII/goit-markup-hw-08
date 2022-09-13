@@ -1,0 +1,19 @@
+.button__mailing {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    @extend .button;
+    @media screen and (min-width:$desktop){
+    margin: 0;
+}}
+
+.mail__svg {
+    margin-left: 10px;
+    fill: $primary-white-color;
+}
+

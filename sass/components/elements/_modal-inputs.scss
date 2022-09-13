@@ -1,0 +1,54 @@
+.modal__icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.modal__input-area {
+    position: relative;
+    width: auto;
+}
+
+.modal__label {
+    display: block;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    padding-left: 40px; 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    @media screen and (min-width:398px) {
+    width: 370px;
+    }
+    @media screen and (min-width:$desktop){
+    width: 448px;
+    }
+}
+
+.modal__label:focus {
+    border-color: $accent-color;
+}
+
+.modal__label:focus+.modal__icon {
+    fill: $accent-color;
+}
+
+.modal__feedback-label {
+    padding: 12px 16px;
+    min-width: 222px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    &:hover, &:focus {
+    border-color: $accent-color;}
+    @media screen and (min-width:398px) {
+    width: 370px;
+    }
+    @media screen and (min-width:$desktop) {
+    width: 448px;}
+    height: 120px;
+}
+
+.modal__feedback-label::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}

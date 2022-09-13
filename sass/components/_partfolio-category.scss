@@ -1,0 +1,15 @@
+.category__list {
+    
+    
+    
+    
+    
+    @media screen and (min-width:$tablet){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;}
+}
+
+@import "./elements/category-card";
+
+

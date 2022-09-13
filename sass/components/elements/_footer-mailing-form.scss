@@ -1,0 +1,52 @@
+.footer__mail-input {
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width:$tablet){
+    width: 65%;
+    }
+    @media screen and (min-width:$desktop) {
+    width: auto;
+    margin: 0;
+    }
+}
+
+.mail__input-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+}
+
+.mail__inner {
+    @media screen and (min-width:$desktop){
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+}
+
+
+.mail__form {
+    margin-bottom: 20px;
+    padding-left: 16px;
+    width: 100%;
+    height: 50px;
+    color: $primary-white-color;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    @media screen and (min-width:$desktop) {
+    margin-bottom: 0;
+    width: 358px;
+}
+}
+
+.mail__form::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@import "./button-mailing";

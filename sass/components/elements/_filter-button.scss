@@ -1,0 +1,19 @@
+.filter__button {
+    padding: 6px 22px;
+    border: transparent;
+    border-radius: 4px;
+    color: $title-color;
+    background-color: $filter-btn-color;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+    &:hover, &:focus {
+    color: $primary-white-color;
+    background-color: $button-bg;
+    box-shadow: $filter-shadow;
+    cursor: pointer;
+    }
+}

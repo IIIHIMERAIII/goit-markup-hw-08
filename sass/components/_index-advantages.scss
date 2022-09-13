@@ -1,0 +1,14 @@
+.advantages {
+    padding-top: 60px;
+    @media screen and(min-width:$desktop){
+    padding-top: 94px;
+    }
+}
+
+.advantages__list {
+    @media screen and (min-width:$tablet){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;}
+}
+@import "./elements/advantages-card";

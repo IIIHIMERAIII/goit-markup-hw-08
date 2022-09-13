@@ -1,0 +1,29 @@
+.header {
+    background-color: $primary-white-color;
+    border-bottom: 1px solid $header-line-color;
+}
+
+.header__inner {
+    display: none;
+    @media screen and (min-width:$tablet) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;}
+}
+
+.mobile-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width:$tablet){
+    display: none;
+    }
+}
+
+@import "./elements/logo-black";
+@import "./elements/header-nav";
+@import "./elements/header-contacts";
+@import "./elements/mobile-menu";

@@ -1,0 +1,27 @@
+.activity {
+    display: none;
+    @media screen and(min-width:$desktop){
+    display: flex;
+    }
+}
+.activity__list {
+    height: 294px;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.activity__subtitle {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 73px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $primary-white-color;
+}

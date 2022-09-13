@@ -1,0 +1,30 @@
+.footer__adress {
+    margin-top: 20px;
+}
+
+.adress__item {
+    margin-top: 9px;
+}
+
+.adress__location {
+    color: $primary-white-color;
+    line-height: 1.71;
+    font-style: normal;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+    &:hover, &:focus {
+    color: $accent-color;
+    }
+}
+
+.adress__contact {
+    margin-top: 9px;
+    color: $contact-link-footer;
+    line-height: 1.71;
+    font-style: normal;
+    transition: $animation-duration;
+    transition-timing-function: $cubic-bezier;
+    &:hover, &:focus {
+    color: $accent-color;
+    }
+}

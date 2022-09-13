@@ -1,0 +1,56 @@
+.modal__mailing {
+    margin-top: 10px;
+}
+
+.modal__checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal__apply-checkbox {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.modal__apply-svg {
+    fill: $primary-white-color;
+}
+
+.modal__apply-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid black;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.modal__apply-checkbox:checked+.modal__apply-bg {
+    background-color: $accent-color;
+    border-color: transparent;
+}
+
+.modal__checkbox-title {
+    font-size: 12px;
+    line-height: 1.16;
+    width: 150px;
+    @media screen and (min-width:398px) {
+    width: auto;
+    }
+    @media screen and (min-width:$desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+    width: auto;
+    }
+}
+
+.modal__mailing-rules {
+    color: $accent-color;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-align: center;
+    @media screen and (min-width:$desktop){
+    font-size: 44px;
+    line-height: 1.36;
+    }
+}
+.hero {
+    text-align: center;
+    padding-bottom: 118px;
+    padding-top: 118px;
+    @media screen and(min-width:$desktop){
+    padding-bottom: 200px;
+    padding-top: 200px;
+    }
+}
+
+@import "./elements/button-hero";
+
+.hero-overlay {
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $background-second-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/background-img_480.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+@media
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2){
+    .hero-overlay{
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/img_x2/background-img_480@x2.jpg");;
+}}
+
+@media screen and (min-width:$tablet){
+    .hero-overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/background-img_768.jpg");;}
+    @media
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2){
+    .hero-overlay{
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/img_x2/background-img_768@x2.jpg");;
+}}}
+
+@media screen and (min-width:$desktop) {
+    .hero-overlay {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/background-img_1600.jpg");
+        ;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2) {
+        .hero-overlay {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../images/img_x2/background-img_1600@x2.jpg");
+            ;
+        }
+    }
+}

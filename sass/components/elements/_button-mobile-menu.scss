@@ -1,0 +1,19 @@
+.menu-button {
+    display: inline-flex;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover .menu-open, &:focus .menu-open {
+    fill: $accent-color;}
+    .menu-close {
+    display: none;}
+    &.is-open .menu-close {
+    display: block;}    
+    &.is-open .menu-open {
+    display: none;}
+    @media screen and (min-width:$tablet){
+    display: none;}
+}

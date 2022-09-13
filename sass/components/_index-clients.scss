@@ -1,0 +1,13 @@
+.clients__list {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+@import "./elements/clients-card";
+
+// 50 m
