@@ -5,16 +5,22 @@
 }
 
 .category__item {
+    border: 1px solid #eee;;
+    &:not(:last-child) {
+    margin-bottom: 30px;
+    }
     max-width: 100%;
     transition: $animation-duration;
     transition-timing-function: $cubic-bezier;
     @media screen and (min-width:$tablet){
+    &:not(:last-child) {
+    margin-bottom: 0;
+    }
     max-width: 354px;
     }
     @media screen and (min-width:$desktop){
     max-width: 370px;
     }
-    
     &:hover {
     box-shadow: $category-shadow;
     cursor: pointer;
@@ -31,7 +37,6 @@
 @import "./category-overlay";
 
 .category__border {
-    border: 1px solid #EEEEEE;
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;

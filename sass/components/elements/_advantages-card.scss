@@ -1,7 +1,10 @@
 .advantages__item {
     width: auto;
-    text-align: start;
+    text-align: center;
+    &:not(:last-child){
+    margin-bottom: 30px;}
     @media screen and (min-width:$tablet){
+    text-align: start;
     width: 354px;
     }
     @media screen and (min-width:$desktop){
@@ -10,7 +13,6 @@
 }
 
 .advantages__title {
-    margin-top: 30px;
     margin-bottom: 0px;
     color: $title-color;
     font-weight: 700;

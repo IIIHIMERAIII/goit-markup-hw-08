@@ -1,5 +1,5 @@
 .clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
@@ -13,8 +13,12 @@
     transition-timing-function: $cubic-bezier;
     }
     &:hover .clients__icon, &:focus .clients__icon {
-    fill: $accent-color;
+    fill: $accent-color;}
+    @media screen and (min-width:$tablet) {
+    width: 226px;
     }
+    @media screen and (min-width:$desktop) {
+    width: 170px;}
 }
 
 .clients__icon {

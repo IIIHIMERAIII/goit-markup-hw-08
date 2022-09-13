@@ -11,7 +11,7 @@
     @media screen and (min-width:$tablet){
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;}
+    justify-content: space-around;}
     & div:nth-child(2n) {
     break-after: always;
     }
@@ -23,9 +23,8 @@
 
 
 .footer__item {
-    margin-bottom: 60px;
     @media screen and (min-width:$desktop){
-    margin:0;
+    margin-bottom: 60px;
     }
 }
 
