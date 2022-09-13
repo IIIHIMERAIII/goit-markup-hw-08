@@ -5,13 +5,14 @@
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: $backdrop-overlay;
+    background-color: $backdrop-overlay;    
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    transition-duration: 2300ms;
+    transition-duration: 1000ms;
+    
 }
 
 .modal {

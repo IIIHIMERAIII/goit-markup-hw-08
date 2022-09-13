@@ -525,7 +525,8 @@ ul {
 }
 
 .menu-button {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
   z-index: 3;
   margin: 0;
   padding: 0;
@@ -552,7 +553,8 @@ ul {
 }
 
 .mobile__menu {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   z-index: 2;
   top: 0%;
@@ -563,6 +565,9 @@ ul {
 }
 .mobile__menu.is-open {
   display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 2300ms;
 }
 @media screen and (min-width: 767.98px) {
   .mobile__menu.is-open {
@@ -1090,7 +1095,7 @@ ul {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition-duration: 2300ms;
+  transition-duration: 1000ms;
 }
 
 .modal {
