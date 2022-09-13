@@ -30,6 +30,7 @@
 .mobile__social-list {
     margin-top: 32px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     font-weight: 500;
     font-size: 18px;
