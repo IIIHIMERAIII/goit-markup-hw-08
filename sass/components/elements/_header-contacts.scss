@@ -1,6 +1,5 @@
 .header__contacts {
-    flex-wrap: wrap;
-    display: flex;
+    text-align: start;
     @media screen and(min-width:$tablet){
     margin-top: 0;
     display:inline-block;  

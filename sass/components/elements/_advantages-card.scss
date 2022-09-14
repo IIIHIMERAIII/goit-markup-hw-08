@@ -1,7 +1,9 @@
 .advantages__item {
     width: auto;
     text-align: center;
-    gap: 30px;
+    gap:30px;
+    &:not(:last-child){
+    margin-bottom: 30px;}
     @media screen and (min-width:$tablet){
     text-align: start;
     width: 354px;

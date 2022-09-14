@@ -467,8 +467,7 @@ ul {
 }
 
 .header__contacts {
-  flex-wrap: wrap;
-  display: flex;
+  text-align: start;
   align-items: center;
   gap: 32px;
 }
@@ -615,7 +614,7 @@ ul {
 }
 
 .mobile__social-list {
-  margin-top: 32px;
+  margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -725,6 +724,9 @@ ul {
   width: auto;
   text-align: center;
   gap: 30px;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 767.98px) {
   .advantages__item {
