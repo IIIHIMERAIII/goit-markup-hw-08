@@ -1,15 +1,23 @@
 .advantages__item {
     width: auto;
     text-align: center;
-    &:not(:last-child){
-    margin-bottom: 30px;}
+    gap: 30px;
     @media screen and (min-width:$tablet){
     text-align: start;
     width: 354px;
     }
     @media screen and (min-width:$desktop){
     width: 270px;
-    }
+}}  
+
+.advantages__box {
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $svg-bg;
+    border-radius: 4px;
 }
 
 .advantages__title {
@@ -25,18 +33,10 @@
     line-height: 1.71;
     margin-top: 10px;
     margin-bottom: 0;
+    text-align: start;
 }
 
 .advantages__svg {
     width: 70px;
     height: 70px;
-}
-
-.advantages__box {
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $svg-bg;
-    border-radius: 4px;
 }

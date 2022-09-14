@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    @media screen and (min-width:$desktop) {
+    margin-top: 50px;}
 }
 
 @import "./elements/clients-card";

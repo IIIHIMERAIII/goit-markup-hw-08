@@ -1,4 +1,4 @@
-.menu-button {
+.menu-btn {
     display: flex;
     justify-content: flex-end;
     z-index: 3;
@@ -11,10 +11,12 @@
     fill: $accent-color;}
     .menu-close {
     display: none;}
-    &.is-open .menu-close {
+    &.hober .menu-close, &:focus .menu-close {
+    fill: $accent-color;}
+    &.active .menu-close {
     display: block;}    
-    &.is-open .menu-open {
+    &.active .menu-open {
     display: none;}
     @media screen and (min-width:$tablet){
-    display: none;}
-}
+    display: none;}}
+

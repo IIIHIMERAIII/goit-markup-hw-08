@@ -47,76 +47,72 @@
       <!-- мобильные устрйоства  -->
       <div class="mobile-header container">
         <a lang="uk" class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-        <button
-          class="menu-button is-open"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container">
           <svg width="24px" height="16px" aria-label="меню">
-            <use class="menu-close" href="./images/icons.svg#icon-menu"></use>
-            <use class="menu-open" href="./images/icons.svg#icon-close-black"></use>
+            <use class="menu-close" href="./images/icons.svg#icon-close-black"></use>
+            <use class="menu-open" href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile__menu" id="menu-conteiner" data-menu>
+      <div class="mobile-menu" id="menu-conteiner">
         <div class="menu__inner">
           <ul class="header__nav">
             <li class="nav__item"><a class="nav__link current" href="./index.html">Студія</a></li>
             <li class="nav__item"><a class="nav__link" href="./portfolio.html">Партфоліо</a></li>
             <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
-          <ul class="header__contacts">
-            <li class="contacts__item">
-              <a class="contacts-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts-mail" href="info@devstudio.com">info@devstudio.com</a>
-            </li>
-          </ul>
-          <ul class="mobile__social-list">
-            <li class="mobile__social-item">
-              <a
-                class="mobile__social-link"
-                href="http://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-                >Instagram
-              </a>
-            </li>
-            <li class="mobile__social-item">
-              <a
-                class="mobile__social-link"
-                href="http://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-                >Twitter
-              </a>
-            </li>
-            <li class="mobile__social-item">
-              <a
-                class="mobile__social-link"
-                href="http://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-                >Facebook
-              </a>
-            </li>
-            <li class="mobile__social-item">
-              <a
-                class="mobile__social-link"
-                href="http://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-                >Linkedin
-              </a>
-            </li>
-          </ul>
+          <div>
+            <ul class="header__contacts">
+              <li class="contacts__item">
+                <a class="contacts-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts-mail" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile__social-list">
+              <li class="mobile__social-item">
+                <a
+                  class="mobile__social-link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                  >Instagram
+                </a>
+              </li>
+              <li class="mobile__social-item">
+                <a
+                  class="mobile__social-link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                  >Twitter
+                </a>
+              </li>
+              <li class="mobile__social-item">
+                <a
+                  class="mobile__social-link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                  >Facebook
+                </a>
+              </li>
+              <li class="mobile__social-item">
+                <a
+                  class="mobile__social-link"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                  >Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -135,7 +131,7 @@
 
       <!-- переваги -->
 
-      <section class="advantages content__box">
+      <section class="advantages">
         <div class="container">
           <h2 class="hidden-title">Наші переваги</h2>
           <ul class="advantages__list">

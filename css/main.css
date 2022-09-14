@@ -276,6 +276,10 @@ body {
   font-style: normal;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -463,8 +467,8 @@ ul {
 }
 
 .header__contacts {
-  margin-top: 302px;
   flex-wrap: wrap;
+  display: flex;
   align-items: center;
   gap: 32px;
 }
@@ -498,20 +502,8 @@ ul {
   font-size: 34px;
   line-height: 1.17;
 }
-@media screen and (min-width: 767.98px) {
-  .contacts-phone {
-    color: #757575;
-    font-size: 12px;
-    line-height: 1.16;
-  }
-}
-@media screen and (min-width: 1199.98px) {
-  .contacts-phone {
-    font-size: 14px;
-    line-height: 1.14;
-  }
-}
-.contacts-phone .contacts-mail {
+
+.contacts-mail {
   margin-top: 32px;
   display: flex;
   align-items: center;
@@ -521,15 +513,8 @@ ul {
   font-size: 24px;
 }
 @media screen and (min-width: 767.98px) {
-  .contacts-phone .contacts-mail {
+  .contacts-mail {
     margin-top: 0;
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 1199.98px) {
-  .contacts-phone {
-    font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -541,13 +526,26 @@ ul {
 .contact__link:hover, .contact__link:focus {
   color: #2196F3;
 }
+@media screen and (min-width: 767.98px) {
+  .contact__link {
+    color: #757575;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.menu-button {
+.menu-btn {
   display: flex;
   justify-content: flex-end;
   z-index: 3;
@@ -557,48 +555,57 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
-.menu-button:hover .menu-open, .menu-button:focus .menu-open {
+.menu-btn:hover .menu-open, .menu-btn:focus .menu-open {
   fill: #2196F3;
 }
-.menu-button .menu-close {
+.menu-btn .menu-close {
   display: none;
 }
-.menu-button.is-open .menu-close {
+.menu-btn.hober .menu-close, .menu-btn:focus .menu-close {
+  fill: #2196F3;
+}
+.menu-btn.active .menu-close {
   display: block;
 }
-.menu-button.is-open .menu-open {
+.menu-btn.active .menu-open {
   display: none;
 }
 @media screen and (min-width: 767.98px) {
-  .menu-button {
+  .menu-btn {
     display: none;
   }
 }
 
-.mobile__menu {
+.mobile-menu {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   z-index: 2;
+  height: 100vh;
+  height: 100vh;
   top: 0%;
   left: 0;
   width: 100%;
   background-color: #FFFFFF;
   text-align: start;
 }
-.mobile__menu.is-open {
+.mobile-menu.active {
   display: block;
   visibility: visible;
   opacity: 1;
   transition-duration: 2300ms;
 }
 @media screen and (min-width: 767.98px) {
-  .mobile__menu.is-open {
+  .mobile-menu.active {
     display: none;
   }
 }
 
 .menu__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 48px;
@@ -697,10 +704,12 @@ ul {
 }
 .advantages {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1199.98px) {
   .advantages {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -715,9 +724,7 @@ ul {
 .advantages__item {
   width: auto;
   text-align: center;
-}
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
+  gap: 30px;
 }
 @media screen and (min-width: 767.98px) {
   .advantages__item {
@@ -729,6 +736,16 @@ ul {
   .advantages__item {
     width: 270px;
   }
+}
+
+.advantages__box {
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .advantages__title {
@@ -744,20 +761,12 @@ ul {
   line-height: 1.71;
   margin-top: 10px;
   margin-bottom: 0;
+  text-align: start;
 }
 
 .advantages__svg {
   width: 70px;
   height: 70px;
-}
-
-.advantages__box {
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F5F4FA;
-  border-radius: 4px;
 }
 
 .activity {
@@ -893,6 +902,11 @@ ul {
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 1199.98px) {
+  .clients__list {
+    margin-top: 50px;
+  }
+}
 
 .clients__link {
   width: 210px;
@@ -963,10 +977,8 @@ ul {
   }
 }
 
-@media screen and (min-width: 1199.98px) {
-  .footer__item {
-    margin-bottom: 60px;
-  }
+.footer__item:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 .logo--white {

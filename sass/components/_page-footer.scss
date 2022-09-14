@@ -25,10 +25,8 @@
 
 
 .footer__item {
-    @media screen and (min-width:$desktop){
-    margin-bottom: 60px;
-    }
-}
+    &:not(:last-child) {margin-bottom: 60px;
+}}
 
 .logo--white {
     color: $primary-white-color;
