@@ -147,22 +147,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <source />
-                  <img
-                    srcset="
-                      ./images/pf1_354.jpg   354w,
-                      ./images/pf1_450.jpg   450w,
-                      ./images/pf1.jpg      1200w,
-                      ./images/pf1_354@x2.jpg   354w x2,
-                      ./images/pf1_450@x2.jpg  450w x2,
-                      ./images/pf1@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    class="categroy__img"
-                    src="./images/pf1_354.jpg"
-                    alt="Технокряк"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf1.jpg 1x, ./images/img_x2/pf1@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf1_354.jpg 1x, ./images/img_x2/pf1_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf1_450.jpg 1x, ./images/img_x2/pf1_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf1_354.jpg" alt="Технокряк" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -180,19 +177,22 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf2.jpg 1x, ./images/img_x2/pf2@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf2_354.jpg 1x, ./images/img_x2/pf2_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf2_450.jpg 1x, ./images/img_x2/pf2_450@x2.jpg 2x"
+                  />
                   <img
-                    srcset="
-                      ./images/pf2_354.jpg   354w,
-                      ./images/pf2_450.jpg   450w,
-                      ./images/pf2.jpg      1200w,
-                      ./images/pf2_354@x2.jpg   354w x2,
-                      ./images/pf2_450@x2.jpg  450w x2,
-                      ./images/pf2@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    class="categroy__img"
                     src="./images/pf2_354.jpg"
-                    alt="Постер New Orlean vs Golden Star"
+                    alt="Постер New Orlean vs
+                  Golden Star"
                     width="370"
                   />
                 </picture>
@@ -214,21 +214,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    srcset="
-                      ./images/pf3_354.jpg   354w,
-                      ./images/pf3_450.jpg   450w,
-                      ./images/pf3.jpg      1200w,
-                      ./images/pf3_354@x2.jpg   354w x2,
-                      ./images/pf3_450@x2.jpg  450w x2,
-                      ./images/pf3@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    class="categroy__img"
-                    src="./images/pf3_354.jpg"
-                    alt="Логототип Seafod"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf3.jpg 1x, ./images/img_x2/pf3@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf3_354.jpg 1x, ./images/img_x2/pf3_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf3_450.jpg 1x, ./images/img_x2/pf3_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf3_354.jpg" alt="Логототип Seafod" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -246,21 +244,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    class="categroy__img"
-                    srcset="
-                      ./images/pf4_354.jpg   354w,
-                      ./images/pf4_450.jpg   450w,
-                      ./images/pf4.jpg      1200w,
-                      ./images/pf4_354@x2.jpg   354w x2,
-                      ./images/pf4_450@x2.jpg  450w x2,
-                      ./images/pf4@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    src="./images/pf4_354.jpg"
-                    alt="Навушники"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf4.jpg 1x, ./images/img_x2/pf4@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf4_354.jpg 1x, ./images/img_x2/pf4_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf4_450.jpg 1x, ./images/img_x2/pf4_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf4_354.jpg" alt="Навушники" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -278,21 +274,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    class="categroy__img"
-                    srcset="
-                      ./images/pf5_354.jpg   354w,
-                      ./images/pf5_450.jpg   450w,
-                      ./images/pf5.jpg      1200w,
-                      ./images/pf5_354@x2.jpg   354w x2,
-                      ./images/pf5_450@x2.jpg  450w x2,
-                      ./images/pf5@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    src="./images/pf5_354.jpg"
-                    alt="Коробки"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf5.jpg 1x, ./images/img_x2/pf5@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf5_354.jpg 1x, ./images/img_x2/pf5_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf5_450.jpg 1x, ./images/img_x2/pf5_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf5_354.jpg" alt="Коробки" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -310,21 +304,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    class="categroy__img"
-                    srcset="
-                      ./images/pf6_354.jpg   354w,
-                      ./images/pf6_450.jpg   450w,
-                      ./images/pf6.jpg      1200w,
-                      ./images/pf6_354@x2.jpg   354w x2,
-                      ./images/pf6_450@x2.jpg  450w x2,
-                      ./images/pf6@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    src="./images/pf6_354.jpg"
-                    alt="Веб ресурс"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf6.jpg 1x, ./images/img_x2/pf6@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf6_354.jpg 1x, ./images/img_x2/pf6_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf6_450.jpg 1x, ./images/img_x2/pf6_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf6_354.jpg" alt="Веб ресурс" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -342,21 +334,19 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    srcset="
-                      ./images/pf7_354.jpg   354w,
-                      ./images/pf7_450.jpg   450w,
-                      ./images/pf7.jpg      1200w,
-                      ./images/pf7_354@x2.jpg   354w x2,
-                      ./images/pf7_450@x2.jpg  450w x2,
-                      ./images/pf7@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    class="categroy__img"
-                    src="./images/pf7_354.jpg"
-                    alt="Розгорнутий журнал"
-                    width="370"
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf7.jpg 1x, ./images/img_x2/pf7@x2.jpg 2x"
                   />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf7_354.jpg 1x, ./images/img_x2/pf7_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf7_450.jpg 1x, ./images/img_x2/pf7_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf7_354.jpg" alt="Розгорнутий журнал" width="370" />
                 </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
@@ -376,21 +366,20 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
-                  <img
-                    class="categroy__img"
-                    srcset="
-                      ./images/pf8_354.jpg   354w,
-                      ./images/pf8_450.jpg   450w,
-                      ./images/pf8.jpg      1200w,
-                      ./images/pf8_354@x2.jpg   354w x2,
-                      ./images/pf8_450@x2.jpg  450w x2,
-                      ./images/pf8@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
-                    src="./images/pf8_354.jpg"
-                    alt="Бірка"
-                    width="370"
-                /></picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf8.jpg 1x, ./images/img_x2/pf8@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf8_354.jpg 1x, ./images/img_x2/pf8_354@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf8_450.jpg 1x, ./images/img_x2/pf8_450@x2.jpg 2x"
+                  />
+                  <img src="./images/pf8_354.jpg" alt="Бірка" width="370" />
+                </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -407,21 +396,25 @@
             <li class="category__item">
               <div class="caregory__wrapper">
                 <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pf9.jpg 1x, ./images/img_x2/pf9@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pf9_354.jpg 1, ./images/img_x2/pf9_354@x2.jpg 2"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./images/pf9_450.jpg 1, ./images/img_x2/pf9_450@x2.jpg 2"
+                  />
                   <img
-                    class="categroy__img"
-                    srcset="
-                      ./images/pf9_354.jpg   354w,
-                      ./images/pf9_450.jpg   450w,
-                      ./images/pf9.jpg      1200w,
-                      ./images/pf9_354@x2.jpg   354w x2,
-                      ./images/pf9_450@x2.jpg  450w x2,
-                      ./images/pf9@x2jpg     1200w x2
-                    "
-                    sizes="(min-width: 1200px ) 1200px, (min-width: 768px) 354px, (min-width: 450px) 450px,"
                     src="./images/pf9_354.jpg"
+                    class="categroy__img"
                     alt="Комп'ютер"
                     width="370"
-                /></picture>
+                  />
+                </picture>
                 <div class="caregory__overlay">
                   <p class="category__overlay-subtitle">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
